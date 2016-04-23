@@ -1,11 +1,11 @@
-## struts2-concurrent-plugin
+## struts2-render-plugin
 ### 简介
 <hr>
-   struts2-bigpipe-plugin是struts2的一款插件，插件功能是把一个页面分成很多个模块。每个模块执行业务代码并渲染有三种模式:
+   struts2-render-plugin是struts2的一款插件，插件功能是把一个页面分成很多个模块。每个模块执行业务代码并渲染有三种模式:
 	<ul>
-		<li>串行模式 <a target="blank" href="http://139.196.10.201:8080/struts-bigpipe-plugin-demo/sync?name=ww&t1=2000&t2=1000&t3=3000">示例</a>
-		<li>服务器端并行模式  <a target="blank" href="http://139.196.10.201:8080/struts-bigpipe-plugin-demo/concurrent?name=ww&t1=2000&t2=1000&t3=3000">示例</a>
-		<li>bigpipe模式 <a target="blank" href="http://139.196.10.201:8080/struts-bigpipe-plugin-demo/bigpipe?name=ww&t1=2000&t2=1000&t3=3000">示例</a>
+		<li>串行模式 
+		<li>服务器端并行模式
+		<li>bigpipe模式
 	</ul>
 	<hr>
 	<b>下面具体介绍一下每个模式</b>
@@ -203,11 +203,6 @@ result中定义了四个pipe，pipe的值为Pipe的全名。
 	     <li>freemarker渲染抛出异常并在页面显示堆栈信息
 	</ul>
 </p>
-### 结语
-<hr>
-此插件功能强大，使用起来十分方便，而且能够大幅度提高性能、用户体验，特别是bigpipe模式。并且对于页面开发可以起到页面代码解耦的功能。市面上有很多后端模块并行执行的框架，但大部分都是在struts层之下做的，多一层就多了很多的复杂度。我个人觉得这些功能应该在MVC层做的，也就是struts负责的。读者看完上面的教程之后，应该也会发现用一个struts插件实现这些功能是多么自然的事情。
-<p>
-插件还有很多不完善的地方，特别是bigpipe js部分。由于本人对前端知识不是特别了解，所以这部分还有很多改善的空间。也借此希望如果有兴趣的TX，一块开发完善此项目。
-</p>
+
 
 
