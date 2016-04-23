@@ -25,8 +25,6 @@ public class PipeSix implements Pipe {
     public String execute() {
         time = t1;
         if (name.equals("down")) {
-//            user = null;
-//            user.setName("");
         }
         SleepUtils.sleep(time);
         return SUCCESS;
